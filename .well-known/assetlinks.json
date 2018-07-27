@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "net.searock.barcodeinstant",
+    "sha256_cert_fingerprints":
+    ["3C:00:F0:61:9F:65:AE:37:54:B4:49:75:1E:77:69:35:34:0E:FA:81:2F:0E:6F:C8:89:AB:9A:92:F3:16:0F:CA"]
+  }
+}]
