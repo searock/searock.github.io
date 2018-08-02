@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>Resize Icon</title>
+        <script 
+        src="https://code.jquery.com/jquery-3.3.1.min.js"   
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   
+        crossorigin="anonymous"></script>   
+        
+        <script src='js/download.js'></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Dimension Type</td>
+                <td>Width</td>
+                <td>Height</td>
+            </tr>
+            <tr>
+                <td>mipmap-mdpi</td>
+                <td><input type="text" id="mdpiWidth" value="48"/></td>
+                <td><input type="text" id="mdpiHeight" value="48"/></td>
+            </tr>
+            <tr>
+                <td>mipmap-hdpi</td>
+                <td><input type="text" id="hdpiWidth" value="72"/></td>
+                <td><input type="text" id="hdpiHeight" value="72"/></td>
+            </tr>  
+            <tr>
+                <td>mipmap-xhdpi</td>
+                <td><input type="text" id="xhdpiWidth" value="96"/></td>
+                <td><input type="text" id="xhdpiHeight" value="96"/></td>
+            </tr>    
+            <tr>
+                <td>mipmap-xxhdpi</td>
+                <td><input type="text" id="xxhdpiWidth" value="144"/></td>
+                <td><input type="text" id="xxhdpiHeight" value="144"/></td>
+            </tr>     
+            <tr>
+                <td>mipmap-xxxhdpi</td>
+                <td><input type="text" id="xxxhdpiWidth" value="192"/></td>
+                <td><input type="text" id="xxxhdpiHeight" value="192"/></td>
+            </tr>                                         
+        </table>
+        <br/><br/>
+        <label>Image File:</label>&nbsp;
+        <input type="file" id="fileUpload"/><br/><br/>
+        <button id="btnResize">Resize</button><br/><br/>
+        Original Image<br/>
+        <img id="imageOriginal" src="" width="100" height="100"/><br/><br/>
+        <div id="result" style="display: none;">
+
+            <table cellspacing="15">
+                <tr>
+                    <td valign="center">Image for mdpi folder</td>
+                    <td><img src="" id="imageMdpi"/></td>
+                    <td valign="center"><button id="buttonMdpi" data="imageMdpi">Download</button></td>
+                </tr>
+                <tr>
+                    <td valign="center">Image for hdpi folder</td>
+                    <td><img src="" id="imageHdpi"/></td>
+                    <td valign="center"><button id="buttonHdpi" data="imageHdpi">Download</button></td>
+                </tr>
+                <tr>
+                    <td valign="center">Image for xhdpi folder</td>
+                    <td><img src="" id="imageXhdpi"/></td>
+                    <td valign="center"><button id="buttonXhdpi" data="imageXhdpi">Download</button></td>
+                </tr>
+                <tr>
+                    <td valign="center">Image for xxhdpi folder</td>
+                    <td><img src="" id="imageXxhdpi"/></td>
+                    <td valign="center"><button id="buttonXxhdpi" data="imageXxhdpi">Download</button></td>
+                </tr>
+                <tr>
+                    <td valign="center">Image for xxxhdpi folder</td>
+                    <td><img src="" id="imageXxxhdpi"/></td>
+                    <td valign="center"><button id="buttonXxxhdpi" data="imageXxxhdpi">Download</button></td>
+                </tr>
+            </table>
+        </div>
+        <canvas id="imageCanvas" style="display: none;"></canvas><br/><br/> 
+        <canvas id="tempCanvas" style="display: none;"></canvas><br/><br/>  
+
+        <script src='js/resizeAppIcon.js'></script>
+    </body>
+</html>
