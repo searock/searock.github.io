@@ -2,7 +2,7 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "net.searock.barcode",
+    "package_name": "net.searock.barcode.app",
     "sha256_cert_fingerprints":
     ["50:7B:27:5D:BB:7A:35:94:DA:A8:7A:41:73:96:5E:93:C2:38:67:30:BD:6D:7E:72:6A:76:B5:29:38:3F:27:4F"]
   }
